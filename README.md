@@ -1,3 +1,5 @@
+# Steps
+
 * get packages
 ```
 sudo apt install tmux wget vim zsh htop`
@@ -37,7 +39,7 @@ cp .tmux.conf ~/.tmux.conf
 ```
 
 * Install tmux plugins
-````
+```
 tmux
 Prefix-I
 ```
