@@ -1,9 +1,11 @@
-# Steps
+# Necessities
 
 * get packages
 ```
 sudo apt install tmux wget vim zsh htop`
 ```
+
+## vim
 
 * setup vim-plug: https://github.com/junegunn/vim-plug
 ```
@@ -16,6 +18,8 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 cp .vimrc ~/.vimrc
 open vim and type :PlugInstall
 ```
+
+## zsh
 
 * setup zsh & oh-my-zsh: https://github.com/ohmyzsh/ohmyzsh
 ```
@@ -31,6 +35,9 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 * modify ~/.zshrc
   * add `export TERM="xterm-256color"` under `export ZSH=...`
   * change `ZSH_THEME` to `ZSH_THEME="powerlevel10k/powerlevel10k"`
+  * `. ~/.zshrc` to update change
+
+## tmux
 
 * setup tmux & tmux plugin manager: https://github.com/tmux-plugins/tpm
 ```
@@ -44,4 +51,12 @@ tmux
 Prefix-I
 ```
 
-* Done! Start to work now!
+# Optionals
+
+## nvm
+
+* setup Node Version Manager: https://github.com/nvm-sh/nvm
+```
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | bash
+command -v nvm # verify install
+```
