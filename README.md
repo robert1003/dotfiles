@@ -60,3 +60,21 @@ Prefix-I
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | bash
 command -v nvm # verify install
 ```
+
+## jupyter notebook
+
+* install packages
+```
+pip install jupyterthemes
+pip install jupyter_contrib_nbextensions
+jupyter contrib nbextension install --user
+```
+
+* set themes
+```
+jt -t gruvboxl -fs 95 -tfs 11 -nfs 115 -cellw 88% -T
+```
+
+* choose packages
+http://localhost:8888/nbextensions/?nbextension=codefolding/main (inside jupyter notebook)
+https://medium.com/@maxtingle/10-jupyter-notebook-extensions-making-my-lyfe-easier-f40139a334ce
