@@ -5,6 +5,14 @@
 sudo apt install tmux wget vim zsh htop`
 ```
 
+## git
+
+```
+git config --global user.email "robert881003@gmail.com"
+git config --global user.name "robert1003"
+git config --global core.editor vim
+```
+
 ## vim
 
 * setup vim-plug: https://github.com/junegunn/vim-plug
