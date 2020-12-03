@@ -69,6 +69,28 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.0/install.sh | bash
 command -v nvm # verify install
 ```
 
+## pyenv
+
+* Install
+```
+git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+# set the following in zshrc
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+```
+
+* Install related package
+```
+sudo apt-get install -y build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+# Alternative of libreadline-dev:
+sudo apt install libedit-dev
+```
+
 ## jupyter notebook
 
 * install packages
