@@ -2,7 +2,7 @@
 
 * get packages
 ```
-sudo apt install tmux wget vim zsh htop`
+sudo apt install tmux wget vim zsh htop make gcc g++
 ```
 
 ## git
