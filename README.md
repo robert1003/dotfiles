@@ -61,6 +61,28 @@ Prefix-I
 
 # Optionals
 
+## gdb & gdb theme
+
+* install gdb
+```
+sudo apt install gdb
+```
+
+* install gdb-gef, gdb-peda, pwngdb (you may choose what you use)
+```
+# peda: https://github.com/longld/peda
+git clone https://github.com/longld/peda.git ~/peda
+echo "source ~/peda/peda.py" >> ~/.gdbinit
+
+# gef: https://gef.readthedocs.io/en/latest/config/
+wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh
+export LC_CTYPE=C.UTF-8 # for unicode problem
+
+# pwngdb: https://github.com/scwuaptx/Pwngdb
+git clone https://github.com/scwuaptx/Pwngdb.git
+cp ~/Pwngdb/.gdbinit ~/ # may manually change gdb-peda to gef
+```
+
 ## nvm
 
 * setup Node Version Manager: https://github.com/nvm-sh/nvm
