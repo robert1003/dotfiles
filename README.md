@@ -2,7 +2,7 @@
 
 * get packages
 ```
-sudo apt install tmux wget vim zsh htop make gcc g++
+sudo apt install tmux wget vim zsh htop make gcc g++ curl openssh-server
 ```
 
 ## git
@@ -77,6 +77,9 @@ echo "source ~/peda/peda.py" >> ~/.gdbinit
 # gef: https://gef.readthedocs.io/en/latest/config/
 wget -q -O- https://github.com/hugsy/gef/raw/master/scripts/gef.sh | sh
 export LC_CTYPE=C.UTF-8 # for unicode problem
+# or...
+git clone https://github.com/hugsy/gef.git  # or git pull to update
+echo 'source /path/to/gef.py' >> ~/.gdbinit
 
 # pwngdb: https://github.com/scwuaptx/Pwngdb
 git clone https://github.com/scwuaptx/Pwngdb.git
