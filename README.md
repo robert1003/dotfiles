@@ -113,6 +113,14 @@ xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 sudo apt install libedit-dev
 ```
 
+## pyenv virtualenv
+
+* Install as pyenv plugin: https://github.com/pyenv/pyenv-virtualenv
+```
+git clone https://github.com/pyenv/pyenv-virtualenv.git $(pyenv root)/plugins/pyenv-virtualenv
+echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
+```
+
 ## jupyter notebook
 
 * install packages
