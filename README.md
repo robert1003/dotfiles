@@ -141,3 +141,7 @@ jt -t gruvboxl -fs 95 -tfs 11 -nfs 115 -cellw 88% -T
 * choose packages
 http://localhost:8888/nbextensions/?nbextension=codefolding/main (inside jupyter notebook)
 https://medium.com/@maxtingle/10-jupyter-notebook-extensions-making-my-lyfe-easier-f40139a334ce
+
+## ngrok
+
+* Secure introspectable tunnels to localhost: https://dashboard.ngrok.com/get-started/setup
