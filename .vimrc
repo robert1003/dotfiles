@@ -15,7 +15,7 @@ set laststatus=2
 
 se ai nu relativenumber ru cul 
 se cin et ts=2 sw=2 sts=2
-so $VIMRUNTIME/mswin.vim
+"so $VIMRUNTIME/mswin.vim
 se gfn=Monospace\ 14
 
 no <F5> :!./a.out<CR>
