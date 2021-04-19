@@ -3,7 +3,7 @@
 
 # get packages
 sudo apt update
-DEBIAN_FRONTEND=noninteractive sudo apt install -y tmux wget vim zsh htop make gcc g++ curl openssh-server gdb git sudo
+DEBIAN_FRONTEND=noninteractive sudo apt install -y tmux wget vim zsh htop make gcc g++ curl openssh-server gdb git sudo silversearcher-ag
 
 # config git
 git config --global user.email "robert881003@gmail.com"
