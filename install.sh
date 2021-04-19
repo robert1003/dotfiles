@@ -2,8 +2,8 @@
 #set -e
 
 # get packages
-apt update
-DEBIAN_FRONTEND=noninteractive apt install -y tmux wget vim zsh htop make gcc g++ curl openssh-server gdb git sudo
+sudo apt update
+DEBIAN_FRONTEND=noninteractive sudo apt install -y tmux wget vim zsh htop make gcc g++ curl openssh-server gdb git sudo
 
 # config git
 git config --global user.email "robert881003@gmail.com"
@@ -58,7 +58,7 @@ pyenv install 3.8.0
 pyenv global 3.8.0
 
 ## Basic
-pip install tqdm
+pip install tqdm joblib
 
 ## ML
 pip install numpy pandas scipy gpustat
