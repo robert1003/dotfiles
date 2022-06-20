@@ -136,3 +136,15 @@ export NVM_DIR="$HOME/.nvm"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# conda auto activate
+cd() { builtin cd "$@" &&
+if [ -f $PWD/.conda_config ]; then
+    export CONDACONFIGDIR=$PWD
+    conda activate $(cat .conda_config)
+elif [ -n $CONDACONFIGDIR ]; then
+    if [[ $PWD != *"$CONDACONFIGDIR"* ]]; then
+        export CONDACONFIGDIR=""
+        conda deactivate
+    fi
+fi }
