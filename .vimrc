@@ -8,7 +8,7 @@ Plug 'tpope/vim-surround'
 call plug#end()
 
 syntax on
-colorscheme monokai
+silent! colorscheme monokai
 
 set t_Co=256
 set laststatus=2
