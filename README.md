@@ -23,6 +23,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 * setup vim
 ```
+# for YCM
+sudo apt install build-essential cmake vim-nox python3-dev
+sudo apt install mono-complete golang nodejs openjdk-17-jdk openjdk-17-jre npm
+
 cp .vimrc ~/.vimrc
 open vim and type :PlugInstall
 ```
